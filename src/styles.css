@@ -1,0 +1,115 @@
+body {
+  font-family: 'Caprasimo', regular;
+}
+
+.breed-select {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 25px;
+  /* line-height: 30px; */
+  position: relative;
+  color: #000000;
+  font-size: 16px;
+  background-color: transparent;
+  border: outset darkgrey;
+  border-radius: 10px;
+  overflow-y: auto;
+  font-family: inherit;
+}
+
+/* .breed-select option {
+  background-color: #fff09e;
+} */
+
+.breed-select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.breed-select::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.breed-select::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+.cat-info {
+  width: 960px;
+  margin: 30px auto;
+  display: flex;
+  background-color: #edfffd;
+  border-radius: 30px;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+}
+
+.breed-image {
+  padding: 15px;
+  width: 500px;
+  border-radius: 30px;
+}
+
+.breed-container {
+  width: 400px;
+  padding: 20px;
+}
+
+.breed-name {
+  font-size: 46px;
+  color: #1d201f;
+}
+
+.breed-temperament {
+  /* color: #DF928E; */
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.breed-description {
+  font-size: 18px;
+  color: #404040;
+  line-height: 1.5;
+}
+
+.loader {
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  display: block;
+  margin: 20px auto;
+  position: relative;
+  background: currentColor;
+  color: #fff;
+  box-sizing: border-box;
+  animation: animloader 0.3s 0.3s linear infinite alternate;
+}
+
+.loader::after,
+.loader::before {
+  content: '';
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  background: currentColor;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  box-sizing: border-box;
+  animation: animloader 0.3s 0.45s linear infinite alternate;
+}
+
+.loader::before {
+  left: -20px;
+  animation-delay: 0s;
+}
+
+@keyframes animloader {
+  0% {
+    height: 48px;
+  }
+  100% {
+    height: 4px;
+  }
+}
